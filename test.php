@@ -8,5 +8,6 @@
 
 echo "Good to Go Esq. Kraine";
 echo "Azure (Web and DB) and Github are Working..!";
+echo "We are Good to Go ! "
 
 ?>
