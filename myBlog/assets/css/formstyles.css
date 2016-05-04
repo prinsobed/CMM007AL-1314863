@@ -48,10 +48,10 @@ textarea, select{
 .form-style-1 input[type=email]:focus,
 .form-style-1 textarea:focus,
 .form-style-1 select:focus{
-    -moz-box-shadow: 0 0 8px #88D5E9;
-    -webkit-box-shadow: 0 0 8px #88D5E9;
-    box-shadow: 0 0 8px #88D5E9;
-    border: 1px solid #88D5E9;
+    -moz-box-shadow: 0 0 8px black;
+    -webkit-box-shadow: 0 0 8px black;
+    box-shadow: 0 0 8px black;
+    border: 1px solid black;
 }
 .form-style-1 .field-text{
     width: 100%;

@@ -20,8 +20,9 @@ if (!$db) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>myBlog | Home</title>
+    <title>myBlog | Add Blog</title>
     <link rel="stylesheet" href="assets/css/styles.css"  type='text/css'>
+    <link rel="stylesheet" href="assets/css/formstyles.css"  type='text/css'>
     <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css" type='text/css'>
     <link rel="stylesheet" href="assets/css/unsemantic-grid-desktop.css" type='text/css'>
     <link rel="stylesheet" href="assets/css/unsemantic-grid-mobile.css" type='text/css'>
