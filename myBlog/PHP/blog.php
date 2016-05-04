@@ -21,12 +21,12 @@
     </div>
     <div>
         <nav>
-            <ul>
-                <li><a href="blog.php">All Blog Items</a> </li>
-                <li><a href="blog.php?category=Work">Work Blog Items</a></li>
-                <li><a href="blog.php?category=University">University Blog Items</a> </li>
-                <li><a href="blog.php?category=Family">Family Blog Items</a></li>
-                <li><a href="add.php">Insert Blog Item</a> </li>
+            <ul id="nav1">
+                <li id="i1"><a id="a1" href="blog.php">All Blog Items</a> </li>
+                <li id="i2"><a id="a2" href="blog.php?category=Work">Work Blog Items</a></li>
+                <li id="i3"><a id="a3" href="blog.php?category=University">University Blog Items</a> </li>
+                <li id="i4"><a id="a4" href="blog.php?category=Family">Family Blog Items</a></li>
+                <li id="i5"><a id="a5" href="add.php">Insert Blog Item</a> </li>
             </ul>
         </nav>
     </div>
