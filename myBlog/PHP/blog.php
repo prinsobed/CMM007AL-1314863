@@ -51,7 +51,7 @@
                     }
                     while($row = $myquery->fetch_array()) {
 
-                        echo "<h3>". $row["entryTitle"] ." by&nbsp;". $row["submitter"] ."</h3><p>". $row["submitter"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
+                        echo "<h3>". $row["entryTitle"] ." by&nbsp;". $row["submitter"] ."</h3><p>". $row["category"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
                     }
                 }
 
@@ -64,7 +64,7 @@
                     }
                     while($row = $myquery->fetch_array()) {
 
-                        echo "<h3>". $row["entryTitle"] ." by&nbsp;". $row["submitter"] ."</h3><p>". $row["submitter"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
+                        echo "<h3>". $row["entryTitle"] ." by&nbsp;". $row["submitter"] ."</h3><p>". $row["category"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
                     }
                 }
 
@@ -77,7 +77,7 @@
                     }
                     while($row = $myquery->fetch_array()) {
 
-                        echo "<h3>". $row["entryTitle"] ." by&nbsp;". $row["submitter"] ."</h3><p>". $row["submitter"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
+                        echo "<h3>". $row["entryTitle"] ." by&nbsp;". $row["submitter"] ."</h3><p>". $row["category"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
                     }
                 }
 
@@ -90,7 +90,7 @@
                     }
                     while ($row = $myquery->fetch_array()) {
 
-                        echo "<h3>" . $row["entryTitle"] . " by&nbsp;" . $row["submitter"] . "</h3><p>" . $row["submitter"] . "</p><p>" . $row["entrySummary"] . "</p><div class=\"block_1\"> </div><hr/>";
+                        echo "<h3>" . $row["entryTitle"] . " by&nbsp;" . $row["submitter"] . "</h3><p>" . $row["category"] . "</p><p>" . $row["entrySummary"] . "</p><div class=\"block_1\"> </div><hr/>";
                     }
                 }
                 ?>
