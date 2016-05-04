@@ -61,6 +61,10 @@ if (!$db) {
                     ?>
                     <form action = '<?{$_SERVER['PHP_SELF'];}?>' method = 'POST'>
                         <ul class='form-style-1'>
+
+                            <li>
+                                <h2>Add Blogs</h2><br>
+                            </li>
                             <li>
                                 <label for = 'title'>Entry Title: <span class='required'>*</span></label>
                                 <input type='text' name='entrytitle' class='field-text' value=''  accesskey='1' placeholder='Blog Title' required/><br>
