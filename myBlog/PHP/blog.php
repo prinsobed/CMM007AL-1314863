@@ -81,16 +81,17 @@
                     }
                 }
 
-                else{
-                $sql = "SELECT * FROM blogview"; //Query DB for data.
-                $myquery = mysqli_query($db,$sql);
+                else {
+                    $sql = "SELECT * FROM blogview"; //Query DB for data.
+                    $myquery = mysqli_query($db, $sql);
 
-                if ($myquery->num_rows > 0) {
-                    echo "<h2>All Blog Items</h2>";
-                }
-                while($row = $myquery->fetch_array()) {
+                    if ($myquery->num_rows > 0) {
+                        echo "<h2>All Blog Items</h2>";
+                    }
+                    while ($row = $myquery->fetch_array()) {
 
-                    echo "<h3>". $row["entryTitle"] ." by&nbsp;". $row["submitter"] ."</h3><p>". $row["submitter"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
+                        echo "<h3>" . $row["entryTitle"] . " by&nbsp;" . $row["submitter"] . "</h3><p>" . $row["submitter"] . "</p><p>" . $row["entrySummary"] . "</p><div class=\"block_1\"> </div><hr/>";
+                    }
                 }
                 ?>
             </div>
