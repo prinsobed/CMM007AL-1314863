@@ -41,9 +41,9 @@ if (!$db) {
         <nav>
             <ul>
                 <li><a href="blog.php">All Blog Items</a> </li>
-                <li><a href="blog.php">Work Blog Items</a></li>
-                <li><a href="blog.php">University Blog Items</a> </li>
-                <li><a href="blog.php">Family Blog Items</a></li>
+                <li><a href="blog.php?category=Work">Work Blog Items</a></li>
+                <li><a href="blog.php?category=University">University Blog Items</a> </li>
+                <li><a href="blog.php?category=Family">Family Blog Items</a></li>
                 <li><a href="add.php">Insert Blog Item</a> </li>
             </ul>
         </nav>
@@ -69,9 +69,9 @@ if (!$db) {
                                 <label for = 'blogCategory'>Category: <span class='required'>*</span></label>
                                 <select name='blogCategory' class='field-select' id='blogCategory' accesskey='2' required>
                                     <option value= ' '>Select Option</option>
-                                    <option value='politics'>Politics</option>
-                                    <option value='sports'>Sports</option>
-                                    <option value='technology'>Technology</option>
+                                    <option value='Work'>Work</option>
+                                    <option value='University'>University</option>
+                                    <option value='Family'>Family</option>
                                 </select>
                             </li>
                             <br>

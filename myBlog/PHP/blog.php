@@ -23,9 +23,9 @@
         <nav>
             <ul>
                 <li><a href="blog.php">All Blog Items</a> </li>
-                <li><a href="blog.php">Work Blog Items</a></li>
-                <li><a href="blog.php">University Blog Items</a> </li>
-                <li><a href="blog.php">Family Blog Items</a></li>
+                <li><a href="blog.php?category=Work">Work Blog Items</a></li>
+                <li><a href="blog.php?category=University">University Blog Items</a> </li>
+                <li><a href="blog.php?category=Family">Family Blog Items</a></li>
                 <li><a href="add.php">Insert Blog Item</a> </li>
             </ul>
         </nav>
@@ -41,6 +41,47 @@
                 <?php
                 include("dbConnect.php"); // Establish Connection with DB
 
+
+                if( $_GET["category"]== "Work"){
+                    $sql = "SELECT * FROM blogview WHERE category = 'Work'"; //Query DB for data.
+                    $myquery = mysqli_query($db, $sql);
+
+                    if ($myquery->num_rows > 0) {
+                        echo "<h2>Work Blogs</h2>";
+                    }
+                    while($row = $myquery->fetch_array()) {
+
+                        echo "<h3>". $row["entryTitle"] ." by&nbsp;". $row["submitter"] ."</h3><p>". $row["submitter"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
+                    }
+                }
+
+                else if( $_GET["category"]== "University"){
+                    $sql = "SELECT * FROM blogview WHERE category = 'University'"; //Query DB for data.
+                    $myquery = mysqli_query($db, $sql);
+
+                    if ($myquery->num_rows > 0) {
+                        echo "<h2>University Blogs</h2>";
+                    }
+                    while($row = $myquery->fetch_array()) {
+
+                        echo "<h3>". $row["entryTitle"] ." by&nbsp;". $row["submitter"] ."</h3><p>". $row["submitter"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
+                    }
+                }
+
+                elseif( $_GET["category"]== "Family"){
+                    $sql = "SELECT * FROM blogview WHERE category = 'Family'"; //Query DB for data.
+                    $myquery = mysqli_query($db, $sql);
+
+                    if ($myquery->num_rows > 0) {
+                        echo "<h2>Family Blogs</h2>";
+                    }
+                    while($row = $myquery->fetch_array()) {
+
+                        echo "<h3>". $row["entryTitle"] ." by&nbsp;". $row["submitter"] ."</h3><p>". $row["submitter"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
+                    }
+                }
+
+                else{
                 $sql = "SELECT * FROM blogview"; //Query DB for data.
                 $myquery = mysqli_query($db,$sql);
 
