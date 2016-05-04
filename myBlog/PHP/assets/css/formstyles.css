@@ -73,7 +73,7 @@ textarea, select{
     color: #fff;
 }
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
-    background: #4691A4;
+    background: black;
     box-shadow:none;
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
