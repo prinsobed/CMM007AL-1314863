@@ -6,8 +6,6 @@
  * Time: 14:07
  */
 
-echo "Good to Go Esq. Kraine";
-echo "Azure (Web and DB) and Github are Working..!";
-echo "We are Good to Go ! "
+echo "Good to Go Kraine, Azure (Web and DB) and Github are Working..!";
 
 ?>
