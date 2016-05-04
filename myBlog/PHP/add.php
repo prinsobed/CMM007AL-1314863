@@ -82,7 +82,7 @@ if (!$db) {
                             <br>
                             <li>
                                 <label for = 'submitter'>Submitted By: <span class='required'>*</span></label>
-                                <input type='text' name='submitter' class='field-text'   accesskey='4' placeholder='Blog Title' /><br>
+                                <input type='text' name='submitter' class='field-text'   accesskey='4' placeholder='Your name' /><br>
                             </li>
                             <li>
                                 <input type='submit' value='Submit' accesskey='5'>
@@ -103,14 +103,13 @@ if (!$db) {
 
 
                     $sql = "INSERT INTO blogview(entryTitle,category, entrySummary, submitter)
-                VALUES ('$myentrytitle','$mycategory','$mysummary','$mysubmitter' )";
-                    mysqli_query($conn, $sql);
+                VALUES ('$myentrytitle','$mycategory','$mysummary','$mysubmitter')";
+                    mysqli_query($db, $sql);
                     header('location: blog.php');
                 }
                 else{
                     header('location: index.php');
                 }
-                ?>
                 ?>
             </div>
         </article>
