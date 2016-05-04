@@ -68,7 +68,7 @@ if (!$db) {
                             <li>
                                 <label for = 'blogCategory'>Category: <span class='required'>*</span></label>
                                 <select name='blogCategory' class='field-select' id='blogCategory' accesskey='2' required>
-                                    <option value= ' '>Select Option</option>
+                                    <option value= ' '>Select Category Option</option>
                                     <option value='Work'>Work</option>
                                     <option value='University'>University</option>
                                     <option value='Family'>Family</option>

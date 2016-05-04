@@ -48,7 +48,7 @@ h2{
 
 }
 
-ul {
+#nav1 {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -56,11 +56,41 @@ ul {
     background-color: #333;
 }
 
-li {
+#i1,#i2,#i3,#i4,#i5 {
     float: left;
 }
 
-li a {
+/*.i2 {*/
+    /*display: block;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*padding: 14px 16px;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.i3 {*/
+    /*display: block;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*padding: 14px 16px;*/
+    /*text-decoration: none;*/
+/*}*/
+/*.i4 {*/
+     /*display: block;*/
+     /*color: white;*/
+     /*text-align: center;*/
+     /*padding: 14px 16px;*/
+     /*text-decoration: none;*/
+ /*}*/
+/*.i5  {*/
+      /*display: block;*/
+      /*color: white;*/
+      /*text-align: center;*/
+      /*padding: 14px 16px;*/
+      /*text-decoration: none;*/
+  /*}*/
+
+#a1,#a2,#a3,#a4,#a5  {
     display: block;
     color: white;
     text-align: center;
