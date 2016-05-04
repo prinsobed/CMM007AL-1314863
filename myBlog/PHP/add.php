@@ -35,7 +35,7 @@ if (!$db) {
 <!--Start of Header-->
 <header>
     <div id="headText">
-        <a href="blog.php"><h1><span class='goHome'>myBlog</span></h1></a>
+        <h1>myBlog</h1>
         <h2>Because the internet needs to think what i think</h2>
     </div>
     <div>
