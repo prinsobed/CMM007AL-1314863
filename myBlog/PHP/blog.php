@@ -49,14 +49,11 @@
                 }
                 while($row = $myquery->fetch_array()) {
 
-                    echo "<h3>". $row["entryTitle"] ." <p>by</p>". $row["submitter"] ."</h3><br><p>". $row["submitter"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
+                    echo "<h3>". $row["entryTitle"] ." by". $row["submitter"] ."</h3><p>". $row["submitter"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
                 }
                 ?>
             </div>
         </article>
-    </section>
-    <section class= "grid-45" id="cont2">
-        <img src="assets/images/logo.png" alt="blog_pic" id="logo">
     </section>
 </main>
 <!--End of Page Main-->
