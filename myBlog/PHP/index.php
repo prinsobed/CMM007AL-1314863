@@ -22,11 +22,11 @@
     <div>
         <nav>
             <ul>
-                <li><a href="blog.html">All Blog Items</a> </li>
-                <li><a href="blog.html">Work Blog Items</a></li>
-                <li><a href="blog.html">University Blog Items</a> </li>
-                <li><a href="blog.html">Family Blog Items</a></li>
-                <li><a href="add.html">Insert Blog Item</a> </li>
+                <li><a href="blog.php">All Blog Items</a> </li>
+                <li><a href="blog.php">Work Blog Items</a></li>
+                <li><a href="blog.php">University Blog Items</a> </li>
+                <li><a href="blog.php">Family Blog Items</a></li>
+                <li><a href="add.php">Insert Blog Item</a> </li>
             </ul>
         </nav>
     </div>

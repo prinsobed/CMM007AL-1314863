@@ -22,11 +22,11 @@
     <div>
         <nav>
             <ul>
-                <li><a href="blog.html">All Blog Items</a> </li>
-                <li><a href="blog.html">Work Blog Items</a></li>
-                <li><a href="blog.html">University Blog Items</a> </li>
-                <li><a href="blog.html">Family Blog Items</a></li>
-                <li><a href="add.html">Insert Blog Item</a> </li>
+                <li><a href="blog.php">All Blog Items</a> </li>
+                <li><a href="blog.php">Work Blog Items</a></li>
+                <li><a href="blog.php">University Blog Items</a> </li>
+                <li><a href="blog.php">Family Blog Items</a></li>
+                <li><a href="add.php">Insert Blog Item</a> </li>
             </ul>
         </nav>
     </div>
@@ -37,16 +37,21 @@
 <main class= "grid-container">
     <section class= "grid-55" id="cont1">
         <article>
-            <div id= "mainArticle">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.
-                    It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div id= "allBugs">
+                <?php
+                include("dbConnect.php"); // Establish Connection with DB
+
+                $sql = "SELECT * FROM blogview"; //Query DB for data.
+                $myquery = mysqli_query($db,$sql);
+
+                if ($myquery->num_rows > 0) {
+                    echo "<h2>All Blog Items</h2>";
+                }
+                while($row = $myquery->fetch_array()) {
+
+                    echo "<h3>". $row["entryTitle"] ." <p>by</p>". $row["submitter"] ."</h3><br><p>". $row["submitter"] ."</p><p>". $row["entrySummary"] ."</p><div class=\"block_1\"> </div><hr/>";
+                }
+                ?>
             </div>
         </article>
     </section>
